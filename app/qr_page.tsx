@@ -129,6 +129,15 @@ export default function Tab() {
 			</View>
 			: <Text style={Texts.text}>Error in error qr code</Text>
 		}
+
+    <View style={styles.qrContainer}>
+      <Text style={[Texts.text, styles.qrTitles]}>Error QR code</Text>
+      <QRCode
+        value={'not-a-uuid'}
+        size={250}
+        color="black"
+        backgroundColor="white" />
+    </View>
       
     <TouchableOpacity activeOpacity={0.8} onPress={getNewQrCodes} style={[Buttons.button, { position: 'absolute', bottom:20 }]}>
       <Text style={ Buttons.buttonText }>Fetch qr codes</Text>
