@@ -1,7 +1,7 @@
 {
   "name": "tempqr-tester",
   "version": "1.0.0",
-  "main": "expo/AppEntry.js",
+  "main": "expo-router/entry",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -9,10 +9,18 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@expo/metro-runtime": "~3.2.1",
+    "@react-native-async-storage/async-storage": "1.23.1",
+    "@supabase/supabase-js": "^2.43.5",
     "expo": "~51.0.18",
+    "expo-router": "~3.5.17",
     "expo-status-bar": "~1.12.1",
     "react": "18.2.0",
-    "react-native": "0.74.3"
+    "react-dom": "18.2.0",
+    "react-native": "0.74.3",
+    "react-native-elements": "^3.4.3",
+    "react-native-qrcode-svg": "^6.3.1",
+    "react-native-web": "~0.19.10"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
